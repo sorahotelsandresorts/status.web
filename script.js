@@ -13,7 +13,7 @@ const CONFIG = {
    ========================= */
 const STATUS = {
   resort:  { state: "maintenance", label: "Maintenance" },
-  checkin: { state: "online", label: "Online" },
+  checkin: { state: "maintenance", label: "Maintenance" },
   stage:   { state: "closed",   label: "Closed"   },
   studios: { state: "online", label: "Online" },   // 🆕 Product Service: SORA Studios Hub
   support: { state: "online", label: "Online" },   // 🆕 Other Services: Support Service
@@ -174,4 +174,5 @@ function touchLastUpdated(){
    setTimeout(()=> setStatus("resort","maintenance"), 8000);
    setTimeout(()=> bulkSetStatus({resort:"online", checkin:"online", stage:"closed"}), 12000);
 */
+
 
